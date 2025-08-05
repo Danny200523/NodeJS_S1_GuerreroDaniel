@@ -2,7 +2,7 @@ let prompt = require('prompt-sync')();
 
 //Conexión a MongoDB
 const { MongoClient, ObjectId } = require('mongodb');
-const uri = 'mongodb+srv://Danny200523:4D7YaNsO3l8RGI1Q@danny.1hnr1lv.mongodb.net/';
+const uri = 'KHE';
 const dbName = 'crud_db';
 const collectionName = 'personas';
 
