@@ -1,7 +1,7 @@
 // Join View and Model
 
 // Importar funciones del Model
-const { createItem, listItems, updateItem, deleteItem } = require('../Model/Model');
+const { createItem, listItems, updateItem, deleteItem } = require('../Models/Model');
 
 // Importar funciones de la View
 const {
@@ -13,7 +13,7 @@ const {
   listData,
   idUdate,
   idDelete
-} = require('../View/view');
+} = require('../Views/view');
 
 
 function option1(){
@@ -28,6 +28,7 @@ function option2(){
 }
 
 function option3(){
+    option2();
     let id = idUdate();
     let nombre = name();
     updateItem(id,nombre);
@@ -35,8 +36,9 @@ function option3(){
 }
 
 function option4(){
+    option2();
     let id = idDelete();
-    deleteItem(id);
+    if(id)deleteItem(id);
     deleteSucceful();
 }
 

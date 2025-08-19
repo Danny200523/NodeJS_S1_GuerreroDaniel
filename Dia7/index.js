@@ -1,6 +1,6 @@
 // System
 
-const {option1,option2,option3,option4,menu} = require('./Controller/controller');
+const {option1,option2,option3,option4,menu} = require('./Controllers/controller');
 
 let booleanito = true;
     while(booleanito){

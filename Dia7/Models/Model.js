@@ -20,14 +20,14 @@ function listItems(){
 
 function updateItem(id,nombre){
     let data = loadData();
-    id = id-1;
+    id = id;
     data[id].nombre =nombre;
     saveData(data);
 }
 
 function deleteItem(id){
     let data = loadData();
-    id = id-1;
+    id = id;
     data.splice(id,1);
     saveData(data);
 }

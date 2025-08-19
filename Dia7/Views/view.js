@@ -37,12 +37,12 @@ function listData(data){
 
 
 function idUdate(){
-    let id = prompt("Ingrese el id del elemento a actualizar: ");
+    let id = prompt("Ingrese el index del elemento a actualizar: ");
     return id;
 }
 
 function idDelete(){
-    let id = prompt("Ingrese el id del elemento a eliminar: ");
+    let id = prompt("Ingrese el index del elemento a eliminar: ");
     return id;
 }
 
