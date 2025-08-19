@@ -21,7 +21,7 @@ class ItemModel{
         const nuevo = new Item({
             id:this._seq++,
             nombre:(nombre || "").trim(), 
-            descripcion:(descripcion || "")
+            descripcion:(descripcion || "").trim()
         });
         this._items.push(nuevo);
         return nuevo;
